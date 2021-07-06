@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3011989549954102439}
   - component: {fileID: 3011989549954102456}
   - component: {fileID: 526665732}
-  m_Layer: 0
+  - component: {fileID: -8195668510077862614}
+  - component: {fileID: 7573748167784025666}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,5 +97,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48d57679ce9d72429c4c5858b51e9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 11400000, guid: 5167eb0346acf2f45909b0f7d39645cd, type: 2}
-  movingSpeed: 2
+--- !u!114 &-8195668510077862614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011989549954102457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d295dbbfbcdbccc4989de770c6525d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  laserSpeed: 5
+  enemyLaser: {fileID: 2957765149168977639, guid: b7f33d5e5c66b4241bfe1a5840503ed6, type: 3}
+--- !u!58 &7573748167784025666
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011989549954102457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.465
